@@ -59,21 +59,21 @@
 	{
 		"name": "Sci-Hub DOI",
 		"alias": "Sci-Hub DOI",
-		"icon": "http://sci-hub.tw/favicon.ico",
-		"_urlTemplate": "http://sci-hub.tw/{z:DOI}",
+		"icon": "http://sci-hub.cc/favicon.ico",
+		"_urlTemplate": "http://sci-hub.cc/{z:DOI}",
 		"description": "SciHub Lookup Lookup",
 		"hidden": false,
 		"_urlParams": [],
 		"_urlNamespaces": {
 			"z": "http://www.zotero.org/namespaces/openSearch#"
 		},
-		"_iconSourceURI": "http://sci-hub.tw/favicon.ico"
+		"_iconSourceURI": "http://sci-hub.cc/favicon.ico"
 	},
 	{
 		"name": "Sci-Hub URL",
 		"alias": "Sci-Hub URL",
 		"icon": "https://lh3.googleusercontent.com/sOX00LxhvUoMVoBEtSGXV9t10d57n4G1Q26wGc2nDmbh2l_elVUti-ULnTsUBnDlNM4_aab70w=s128-h128-e365",
-		"_urlTemplate": "http://sci-hub.tw/{z:url}",
+		"_urlTemplate": "http://sci-hub.cc/{z:url}",
 		"description": "SciHub URL Lookup",
 		"hidden": false,
 		"_urlParams": [],
@@ -82,6 +82,22 @@
 		},
 		"_iconSourceURI": "https://lh3.googleusercontent.com/sOX00LxhvUoMVoBEtSGXV9t10d57n4G1Q26wGc2nDmbh2l_elVUti-ULnTsUBnDlNM4_aab70w=s128-h128-e365"
 	},
+	{
+		"name": "LibGen",
+		"alias": "LibGen",
+		"icon": "http://libgen.be/favicon.ico",
+		"_urlTemplate": "http://libgen.be/search.php?req={rft:aufirst?}+{rft:aulast?}+{rft:title?}+{z:ISBN?}",
+		"description": "Look up books on Library Genesis",
+		"hidden": false,
+		"_urlParams": [],
+		"_method": "GET",
+		"_urlNamespaces": {
+			"rft": "info:ofi/fmt:kev:mtx:book",
+			"xmlns": "http://a9.com/-/spec/opensearch/1.1/",
+			"z": "http://www.zotero.org/namespaces/openSearch#"
+		},
+		"_iconSourceURI": "http://libgen.be/favicon.ico"
+	},	
 	{
 		"name": "Amazon.com",
 		"alias": "Amazon.com Search",
@@ -96,22 +112,6 @@
 			"xmlns": "http://a9.com/-/spec/opensearch/1.1/"
 		},
 		"_iconSourceURI": "http://www.amazon.com/favicon.ico"
-	},
-	{
-		"name": "LibGen",
-		"alias": "LibGen",
-		"icon": "http://gen.lib.rus.ec/favicon.ico",
-		"_urlTemplate": "http://gen.lib.rus.ec/search.php?req={rft:aufirst?}+{rft:aulast?}+{rft:title?}+{z:ISBN?}",
-		"description": "Look up books on Library Genesis",
-		"hidden": false,
-		"_urlParams": [],
-		"_method": "GET",
-		"_urlNamespaces": {
-			"rft": "info:ofi/fmt:kev:mtx:book",
-			"xmlns": "http://a9.com/-/spec/opensearch/1.1/",
-			"z": "http://www.zotero.org/namespaces/openSearch#"
-		},
-		"_iconSourceURI": "http://gen.lib.rus.ec/favicon.ico"
 	},
 	{
 		"name": "Google",
